@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id = "timebox">
+        <div>
+            <label>Adjust skew (ms)</label>
+            <input type = number id = "timeskewinput"></input>
+        </div>
+        <div>
+            <label>Adjust drift(%)</label>
+            <input type = number id = "timedriftinput"></input>
+        </div>
+        <label>Suggested offset (ms)</label>
+        <span id = 'proposedoffset'></span>
+        <div class = "displaybox">
+            <div>Current time is:</div>
+            <div class = "timedisplay" id = "currenttime"></div>
+        </div>
+        <div  class = "displaybox">
+            <div>Client time is:</div>
+            <div class = "timedisplay" id = "currentclienttime"></div>
+        </div>
+        <div  class = "displaybox">
+            <div>Client time is:</div>
+            <div class = "timedisplay" id = "currentclienttime"></div>
+        </div>
+        <div  class = "displaybox">
+            <div>Error is:</div>
+            <div class = "timedisplay" id = "errorbox"></div>
+        </div>
+        <div id="adjusttimebutton">
+            Readjust time
+        </div>
+        
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
